@@ -1,0 +1,67 @@
+/*
+=========================================================================================
+                                    8. TESTIMONIAL
+=========================================================================================
+*/
+.testimonial{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-color: #FAFAFA;
+    position: relative;
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{
+        width: 100%;
+        display: block;
+    }
+    &::before{
+        font-family: 'Font Awesome 5 Free';
+        font-size: 165px;
+        content: "\f10d";
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%,-50%);
+        color: #f0f0f0;
+        font-weight: 900;
+        opacity: .9;
+    }
+    .owl-dots{
+        margin-top: 50px !important;
+        .owl-dot.active{
+            
+                outline: none !important;
+            span{
+                background-color: blue;
+            }
+        }
+    }
+    &-area{
+        width: 90%;
+        margin: auto;
+        
+    &-content{
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        h4{
+            line-height: 1.7;
+            font-weight: 500;
+            font-size: 35px;
+            i{
+                font-size: 10px;
+            }
+        }
+        h6{
+            position: relative;
+            color: #777;
+            span{
+                color: #2238F8;
+            }
+        }
+    }
+    }
+}
+span{
+    color: #2238F8;
+}

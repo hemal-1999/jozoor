@@ -1,0 +1,31 @@
+/*
+=========================================================================================
+                                    1. RESET CSS
+=========================================================================================
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p,h1,h2,h3,h4,h5,h6,strong,span,ul,li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'poppins',sans-sarif;
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+    &:hover{
+        color: #555;
+        text-decoration: none;
+    }
+}

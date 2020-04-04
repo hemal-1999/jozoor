@@ -1,0 +1,39 @@
+/*
+=========================================================================================
+                                        5. FEATURE
+=========================================================================================
+*/
+section.feature{
+    text-align: center;
+    background-color: #FAFAFA;
+    .feature-box{
+        text-align: left;
+        background-color: #fff;
+        padding: 60px 40px;
+        transition: .5s;
+        &:hover{
+            box-shadow: 0 0 25px rgba(0,0,0,0.1);
+        }
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+                &:nth-child(1){
+                    font-size: 55px;
+                    color: #777;
+                }
+                &:nth-child(2){
+                    font-size: 25px;
+                    color: lighten(#000,25%);
+                    font-weight: 500
+                }
+                &:nth-child(3){
+                    font-size: 15px;
+                    line-height: 1.7;
+                    color: lighten(#000,50%)
+                }
+            }
+        }
+    }
+}

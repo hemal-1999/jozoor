@@ -1,0 +1,95 @@
+/*
+=========================================================================================
+                                    2. GENERIC CSS
+=========================================================================================
+*/
+
+
+
+// section margin
+.section-padding{
+    padding: 115px 0;
+}
+
+.section-margin{
+    margin: 115px 0;
+}
+
+// generic btn =======================
+.generic-btn{
+    padding: 14px 30px;
+    display: inline-block;
+    border-radius: 100px;
+    font-weight: 600;
+    transition: .3s;
+    text-transform: capitalize;
+}
+.blue-btn{
+    background-color: #2231F6;
+    color: #fff;
+    i{
+        margin-right: 10px;
+    }
+    &:hover{
+        color: #2231F6;
+        background-color: #fff;
+    }
+}
+.white-btn{
+    background-color: #fff;
+    color: #333;
+}
+// fix ====================
+.fix{
+    overflow: hidden;
+}
+//clearfix ==========
+.clear{
+    clear: both;
+}
+//generic title ====================
+.generic-title{
+    text-align: center;
+    h2{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+    p{
+        width: 50%;
+        color: #777;
+        font-size: 17px;
+        margin: auto;
+        line-height: 1.7;
+    }
+}
+
+//margin ==================
+.mb-100{
+    margin-bottom: 100px;
+}
+.mt-52{
+    margin-top: 52px;
+}
+.mt-104{
+    margin-top: 104px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-90{
+    margin-top: 90px;
+}
+.mb-145{
+    margin-bottom: 145px;
+}
+.border-link{
+    font-weight: 600;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-bottom: .5px solid darken(#fff,40%);
+    transition: .3s;
+    &:hover{
+        border-bottom: .5px solid #2231F6;
+    }
+}

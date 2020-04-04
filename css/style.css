@@ -1,0 +1,908 @@
+@charset "UTF-8";
+/*
+=========================================================================================
+                                    jozoor portfolio template
+=========================================================================================
+*/
+/* css index ====================================*/
+/* 1. RESET CSS ================================*/
+/* 2. GENERIC CSS ================================*/
+/* 3. VARIABLES ================================*/
+/* 4. HEADER ================================*/
+/* 5. FEATURE ================================*/
+/* 6. WORK ================================*/
+/* 7. FEATURE GELLARY ================================*/
+/* 8. TESTIMONIAL ================================*/
+/* 9. COUNT UP ================================*/
+/* 10. VIDEO ================================*/
+/* 11. TEAM ================================*/
+/* 12. MINIMAL TEMPLATE ================================*/
+/* 13. NEWS ================================*/
+/* 14. FOOTER ================================*/
+/* *. ANIMATION ================================*/
+/* *. RESPONSIVE ================================*/
+/* css file linkup =====================================*/
+/*
+=========================================================================================
+                                    1. RESET CSS
+=========================================================================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, strong, span, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins", sans-sarif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+/*
+=========================================================================================
+                                    2. GENERIC CSS
+=========================================================================================
+*/
+.section-padding {
+  padding: 115px 0;
+}
+
+.section-margin {
+  margin: 115px 0;
+}
+
+.generic-btn {
+  padding: 14px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+
+.blue-btn {
+  background-color: #2231F6;
+  color: #fff;
+}
+.blue-btn i {
+  margin-right: 10px;
+}
+.blue-btn:hover {
+  color: #2231F6;
+  background-color: #fff;
+}
+
+.white-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.generic-title {
+  text-align: center;
+}
+.generic-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+.generic-title p {
+  width: 50%;
+  color: #777;
+  font-size: 17px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mt-52 {
+  margin-top: 52px;
+}
+
+.mt-104 {
+  margin-top: 104px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mb-145 {
+  margin-bottom: 145px;
+}
+
+.border-link {
+  font-weight: 600;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 0.5px solid #999999;
+  transition: 0.3s;
+}
+.border-link:hover {
+  border-bottom: 0.5px solid #2231F6;
+}
+
+/*
+=========================================================================================
+                                    3. VARIABLES
+=========================================================================================
+*/
+/*
+=========================================================================================
+                                        4. HEADER
+=========================================================================================
+*/
+header.header {
+  width: 100%;
+  height: 100vh;
+}
+header.header i.fa-bars {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 30px;
+  color: #fff;
+  display: none !important;
+  text-align: left !important;
+}
+header.header nav.menu {
+  background-color: #2231F6;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-align: center;
+}
+header.header nav.menu ul {
+  text-align: center;
+  background-color: #2231F6;
+}
+header.header nav.menu ul li {
+  transition: 0.5s;
+  padding: 25px 20px;
+  display: inline-block;
+  position: relative;
+}
+header.header nav.menu ul li:hover {
+  background-color: #FB0048;
+}
+header.header nav.menu ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+header.header .owl-dots {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header.header .owl-dots .owl-dot {
+  outline: none;
+}
+header.header .owl-dots .owl-dot span {
+  transition: 0.5s;
+  width: 20px;
+  height: 20px;
+  background-color: #2231F6;
+}
+header.header .owl-dots .owl-dot span:hover {
+  background-color: #2231f6;
+}
+header.header .owl-dots .owl-dot.active span {
+  transition: 0.5s;
+  background-color: #2231f6;
+  width: 40px;
+}
+header.header .owl-prev, header.header .owl-next {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  border: 2px solid #fff !important;
+  outline: none;
+}
+header.header .owl-prev span, header.header .owl-next span {
+  font-size: 50px;
+  color: #fff;
+  line-height: 35px !important;
+}
+header.header .owl-prev {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header.header .owl-next {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header.header .header-wraper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+header.header .header-wraper img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+header.header .header-wraper .header-content {
+  position: relative;
+  z-index: 33;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  display: table;
+}
+header.header .header-wraper .header-content .header-content-item {
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+}
+header.header .header-wraper .header-content .header-content-item h1 {
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "poppins", sans-sarif;
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+.header-box {
+  width: 95%;
+  background-color: #2231F6;
+  color: #fff;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 99999;
+  margin: -60px auto 0 auto;
+}
+.header-box .left-header p {
+  font-size: 18px;
+}
+.header-box .left-header h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.header-box .right-header p {
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+/*
+=========================================================================================
+                                        5. FEATURE
+=========================================================================================
+*/
+section.feature {
+  text-align: center;
+  background-color: #FAFAFA;
+}
+section.feature .feature-box {
+  text-align: left;
+  background-color: #fff;
+  padding: 60px 40px;
+  transition: 0.5s;
+}
+section.feature .feature-box:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+section.feature .feature-box ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+section.feature .feature-box ul li:nth-child(1) {
+  font-size: 55px;
+  color: #777;
+}
+section.feature .feature-box ul li:nth-child(2) {
+  font-size: 25px;
+  color: #404040;
+  font-weight: 500;
+}
+section.feature .feature-box ul li:nth-child(3) {
+  font-size: 15px;
+  line-height: 1.7;
+  color: gray;
+}
+
+/*
+=========================================================================================
+                                    6. WORK
+=========================================================================================
+*/
+section.work {
+  background-color: #000;
+  color: #fff;
+  padding: 115px 0 355px 0;
+}
+section.work h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+section.work p {
+  font-size: 20px;
+  color: #b3b3b3;
+}
+
+/*
+=========================================================================================
+                                    7. FEATURE GELLARY
+=========================================================================================
+*/
+.feature-gellary {
+  margin-top: -250px;
+}
+.feature-gellary .gellary-box-item:hover .feature-gellary-box-content {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+}
+.feature-gellary-box {
+  margin-top: 40px;
+  position: relative;
+}
+.feature-gellary-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.feature-gellary-box:hover::after {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+.feature-gellary-box:hover img {
+  transform: scale(1);
+}
+.feature-gellary-box img {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.feature-gellary-box-content {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  color: #fff;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.feature-gellary-box-content h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.feature-gellary-box-content p {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.feature-gellary a:hover {
+  background-color: #FB0048 !important;
+  color: #fff !important;
+}
+
+/*
+=========================================================================================
+                                    8. TESTIMONIAL
+=========================================================================================
+*/
+.testimonial {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: #FAFAFA;
+  position: relative;
+}
+.testimonial .no-js .owl-carousel, .testimonial .owl-carousel.owl-loaded {
+  width: 100%;
+  display: block;
+}
+.testimonial::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 165px;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  color: #f0f0f0;
+  font-weight: 900;
+  opacity: 0.9;
+}
+.testimonial .owl-dots {
+  margin-top: 50px !important;
+}
+.testimonial .owl-dots .owl-dot.active {
+  outline: none !important;
+}
+.testimonial .owl-dots .owl-dot.active span {
+  background-color: blue;
+}
+.testimonial-area {
+  width: 90%;
+  margin: auto;
+}
+.testimonial-area-content {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.testimonial-area-content h4 {
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: 35px;
+}
+.testimonial-area-content h4 i {
+  font-size: 10px;
+}
+.testimonial-area-content h6 {
+  position: relative;
+  color: #777;
+}
+.testimonial-area-content h6 span {
+  color: #2238F8;
+}
+
+span {
+  color: #2238F8;
+}
+
+/*
+=========================================================================================
+                                    9. COUNT UP
+=========================================================================================
+*/
+.countup {
+  position: relative;
+}
+.countup-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.countup-background img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.countup-content {
+  position: relative;
+  z-index: 9999;
+  color: #fff;
+}
+.countup-content .countup-box li:first-child {
+  font-size: 65px;
+  font-weight: 500;
+}
+.countup-content .countup-box li:last-child {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*
+=========================================================================================
+                                        10. VIDEO
+=========================================================================================
+*/
+section.video .video-left-side .generic-title p {
+  margin: 0;
+  color: #999999;
+}
+section.video .video-left-side .generic-title p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 0;
+}
+section.video .video-left-side .generic-title h2 {
+  margin-bottom: 30px;
+}
+section.video .video-left-side .generic-title .blue-btn:hover {
+  background-color: #FB0048;
+  color: #fff;
+}
+section.video .video-right-side {
+  position: relative;
+}
+section.video .video-right-side a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+}
+section.video .video-right-side a::before, section.video .video-right-side a:after {
+  animation-name: video-animation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  content: "";
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+section.video .video-right-side a::before {
+  animation-delay: 0.7s;
+}
+section.video .video-right-side a:hover::before, section.video .video-right-side a:hover::after {
+  animation-duration: 0s;
+}
+section.video .video-right-side a i {
+  line-height: 65px;
+  color: #2231F6;
+}
+
+/*
+=========================================================================================
+                                        11. TEAM
+=========================================================================================
+*/
+.team {
+  background-color: #FAFAFA;
+}
+.team-membar-box-parent:hover img {
+  transform: scale(1.1);
+}
+.team-membar-box-parent:hover a.brand-logo {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.team-membar-box-parent:hover .team-membar-box-desc-content {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.team-membar-box-parent:hover .team-membar-box-img::after {
+  opacity: 1;
+  visibility: visible;
+}
+.team-membar-box {
+  margin-top: 15px;
+  position: relative;
+}
+.team-membar-box-img {
+  position: relative;
+}
+.team-membar-box-img::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.team-membar-box-img:hover::after {
+  transition-delay: 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+.team-membar-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s;
+}
+.team-membar-box-desc-icon {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.team-membar-box-desc-icon li {
+  display: inline-block;
+}
+.team-membar-box-desc-icon li:not(:last-child) {
+  margin-right: 10px;
+}
+.team-membar-box-desc-icon li a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  background-color: #2231F6;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.team-membar-box-desc-content {
+  position: absolute;
+  left: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  bottom: 30px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.team-membar-box a.membar-name:hover {
+  color: #fff !important;
+}
+
+/*
+=========================================================================================
+                                    12. MINIMAL TEMPLATE
+=========================================================================================
+*/
+.minimal-template-right-content i {
+  font-size: 60px;
+  text-align: center;
+  transition: 0.3s;
+  color: #F6AFFF;
+}
+.minimal-template-right-content i:hover {
+  color: #FB0048;
+}
+.minimal-template-right-content h4 {
+  transition: 0.3s;
+  color: #333;
+}
+.minimal-template-right-content h4:hover {
+  color: #F6AFFF;
+}
+
+/*
+=========================================================================================
+                                    13. NEWS
+=========================================================================================
+*/
+.news {
+  background-color: #FAFAFA;
+}
+.news-box {
+  background-color: #fff;
+  padding: 60px 35px;
+  transition: 0.3s;
+}
+.news-box:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.04);
+}
+.news-box p {
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.news-box p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b3b3b3;
+}
+.news-box a {
+  color: #302DE9;
+  font-weight: 500;
+}
+.news .owl-dots {
+  margin-top: 60px !important;
+}
+.news .owl-dots .owl-dot.active span {
+  background-color: #302DE9;
+}
+
+/*
+=========================================================================================
+                                    14. FOOTER
+=========================================================================================
+*/
+.footer .start-project {
+  color: #fff;
+  border-radius: 5px;
+  padding: 60px 20px;
+  background-color: #2231F6;
+  position: relative;
+  margin-bottom: -150px;
+}
+.footer .start-project p {
+  color: #fff;
+}
+.footer .start-project a {
+  margin-top: 35px;
+  height: 54px;
+}
+.footer .footer-bottom {
+  padding: 290px 0;
+  background-color: #000;
+  color: #fff;
+}
+.footer .footer-bottom a {
+  color: #fff;
+}
+.footer .footer-bottom input {
+  background-color: transparent;
+  color: gray;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+.footer .footer-bottom button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+/*
+=========================================================================================
+                                        *. ANIMATION
+=========================================================================================
+*/
+.scaleUp {
+  animation-name: scaleUpAnimation;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleUpAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.toTop, .toBottom {
+  animation-duration: 1.7s;
+  animation-timing-function: ease-out;
+}
+
+.toTop {
+  animation-name: toTopAnimation;
+}
+
+.toBottom {
+  animation-name: toBottomAnimation;
+}
+
+@keyframes toTopAnimation {
+  0% {
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes toBottomAnimation {
+  0% {
+    transform: translateY(-200px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes video-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+/*
+=========================================================================================
+                                        *. RESPONSIVE
+=========================================================================================
+*/
+@media screen and (max-width: 992px) {
+  .header {
+    position: relative;
+  }
+  .header h1 {
+    font-size: 60px !important;
+  }
+
+  nav.menu i.fa-bars, nav.menu i.fa-times {
+    display: block !important;
+    text-align: center !important;
+  }
+  nav.menu ul {
+    display: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  nav.menu ul li {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 35px !important;
+  }
+
+  .generic-title p {
+    width: 85% !important;
+  }
+
+  .testimonial-area {
+    width: 95px;
+    margin: auto;
+  }
+  .testimonial-area-content h4 {
+    font-size: 20px !important;
+  }
+}

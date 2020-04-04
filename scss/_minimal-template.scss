@@ -1,0 +1,29 @@
+/*
+=========================================================================================
+                                    12. MINIMAL TEMPLATE
+=========================================================================================
+*/
+
+.minimal-template{
+    &-right{
+        &-content{
+            
+            i{
+                font-size: 60px;
+                text-align: center;
+                transition: .3s;
+                color: #F6AFFF;
+                &:hover{
+                    color: #FB0048;
+                }
+            }
+            h4{
+                transition: .3s;
+                color: #333;
+                &:hover{
+                    color: #F6AFFF;
+                }
+            }
+        }
+    }
+}

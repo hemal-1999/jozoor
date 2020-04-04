@@ -1,0 +1,45 @@
+/*
+=========================================================================================
+                                    14. FOOTER
+=========================================================================================
+*/
+.footer{
+    .start-project{
+        color: #fff;
+        border-radius: 5px;
+        padding: 60px 20px;
+        background-color: #2231F6;
+        position: relative;
+        margin-bottom: -150px;
+        p{
+            color: #fff;
+        }
+        a{
+            margin-top: 35px;
+            height: 54px;
+        }
+    }
+    .footer-bottom{
+        padding: 290px 0;
+        background-color: #000;
+        color: #fff;
+        a{
+            color: #fff;
+        }
+        input{
+            background-color: transparent;
+            color: darken(#fff,50%);
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+        }
+        
+        button{
+            background-color: transparent;
+            border: none;
+            color: #fff;
+        }
+    }
+}
